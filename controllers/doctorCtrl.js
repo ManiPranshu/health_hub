@@ -3,7 +3,7 @@ const appointmentModel = require('../models/appointmentModel')
 const doctorModel = require('../models/doctorModel')
 const userModel = require('../models/userModels')
 
-
+  
 
 const getDoctorInfoController =async(req,res)=>{
 

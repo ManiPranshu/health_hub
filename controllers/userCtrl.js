@@ -10,7 +10,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat');
 dayjs.extend(customParseFormat);
 
 
-const registercontroller = async (req, res) => {
+const registercontroller = async (req, res) => {  
 
 
 
@@ -48,10 +48,6 @@ const registercontroller = async (req, res) => {
 
 
     }
-
-
-
-
 
 }
 

@@ -7,21 +7,14 @@ const cors =require('cors')
 const path = require('path')
 
 
+//Configuring doten
 dotenv.config();
+
+//database connection
 connectodb();  
 
 // initialize the express app.
 const app = express();
-
-
-
-
-
-//Configuring dotenv
-
-
-//
-
 
 // Adding middleWares
 app.use(cors())
@@ -35,18 +28,19 @@ app.use(moragan('dev'))//morgan is a logger middleware When you use app.use(morg
 
 
 
-
+ 
 //app.use is used to mount middleware functions at a specified path.
 
 app.use('/api/v1/user', require('./routes/userRoutes'))
 app.use('/api/v1/admin',require('./routes/adminRoutes'))
-
+ 
 
 app.use('/api/v1/doctor',require('./routes/doctorRoutes'))
 
 //static files
 app.use(express.static(path.join(__dirname,'./client/build')))
 
+//for any unknown route send back the html.index of the react app
 app.get('*',function (req,res){
     res.sendFile(path.join(__dirname,'./client/build/index.html'))
 })
