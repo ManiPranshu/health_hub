@@ -34,7 +34,7 @@ HealthHub is a comprehensive doctor appointment application. It allows users to 
 
 ## Deployment
 
-The application is deployed and can be accessed at: [HealthHub](https://doctor-application-platform.onrender.com/)
+The application is deployed and can be accessed at: [HealthHub](https://health-hub-7be5.onrender.com)
 
 ## Installation
 

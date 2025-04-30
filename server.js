@@ -8,7 +8,7 @@ const path = require('path')
 
 
 dotenv.config();
-connectodb();
+connectodb();  
 
 // initialize the express app.
 const app = express();
